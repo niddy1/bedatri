@@ -201,7 +201,7 @@ a.article .article{
 	}
 	.left-div{
 		position: absolute;
-		width: 100%;
+		width: 320px;
 		top: 10px;
 	}
 	.full-name span{
