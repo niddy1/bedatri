@@ -186,7 +186,7 @@ a.article .article{
 
 @media (max-width: 550px){
 	.content{
-		padding-top: 65px;
+		padding-top: 95px;
 	}
 
 	.article-container, .about-container{
@@ -201,12 +201,32 @@ a.article .article{
 	}
 	.left-div{
 		position: absolute;
-		width: 240px;
-		background-color: red;
+		width: 280px;
 		top: 10px;
 	}
+
+	.left-div .initials{
+		font-size: 65px;
+	}
+	.left-div .full-name{
+		font-size: 18px;
+	}
+
+	.left-div .about-link{
+		font-size: 18px;
+	}
+
+	.left-div .about-me{
+		margin-bottom: 15px;
+	}
+	
 	.full-name span{
 		display: inline-block;
+	}
+
+	.social .fa{
+		font-size: 22px;
+		margin-right: 20px;
 	}
 
 }
