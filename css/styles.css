@@ -16,6 +16,7 @@ ul {
 }
 a {
 	text-decoration: none;
+	color: #000;
 }
 img {
   max-width: 100%;
@@ -136,7 +137,7 @@ img {
 	width: calc(33.33% - 16.7px);
 	float: left;
 	cursor: pointer;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 	margin-right: 25px;
 }
 a.article .article{
@@ -220,6 +221,7 @@ a.article .article{
 }
 .article-container .article .img-container {
 	position: relative;
+	margin-bottom: 5px;
 }
 
 .article-container .article .img-container .preview-text{
