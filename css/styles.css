@@ -123,7 +123,7 @@ img {
 }
 
 @media (max-width: 768px){
-	.article-container{
+	.article-container, .about-container{
 		width: calc(100% - 105px);
 		padding-left: 105px;
 	}
@@ -138,6 +138,9 @@ img {
 	cursor: pointer;
 	margin-bottom: 25px;
 	margin-right: 25px;
+}
+a.article .article{
+	width: 100%;
 }
 
 @media (max-width: 768px){
@@ -185,7 +188,7 @@ img {
 		padding-top: 65px;
 	}
 
-	.article-container {
+	.article-container, .about-container{
 		width: 100%;
 		padding-left: 0px;
 	}
@@ -205,7 +208,9 @@ img {
 	}
 
 }
-
+/*.article-container .article-link{
+	display: inline-block;
+}*/
 .article-container .article .img-container .img{
 	background-repeat: no-repeat;
 	background-size: cover;
