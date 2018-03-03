@@ -20,14 +20,35 @@ BDC.aboutLinkAction = {
 
 BDC.logoColorChange = {
 	init: function () {
+		count = 0;
 		$evenArticles = jQuery('a.article:even');
 		$oddArticles = jQuery('a.article:odd');
 		$thirdArticles = jQuery('a.article:nth-child(3n+3)');
 		$initials = jQuery('.initials');
 
+		function createTom(){
+			if ( jQuery('.secret-tom').length == 0 ) {
+				var $input = jQuery('<input type="button" class="secret-tom" value="TOM MODE" />');
+				$input.appendTo(jQuery(".secret"));
+				jQuery('.secret-tom').click(function(e){
+					e.preventDefault();
+					$('.img').css('background-image', 'url(css/images/tom.jpg)');
+					$('div').css( 'cursor', 'url(css/images/tom-face.png), auto');
+					$('.initials a').text("TOM");
+					$('.full-name').text("Tommy Cinema");
+				})
+			}
+		}
+
+
 		$oddArticles.hover(
 		  function() {
 		    $initials.addClass( "teal" );
+		    count +=1;
+		    console.log(count);
+		    if (count > 50){
+		    	createTom();
+		    }
 		  }, function() {
 		    $initials.removeClass( "teal" );
 		  }
@@ -35,6 +56,8 @@ BDC.logoColorChange = {
 		$evenArticles.hover(
 		  function() {
 		    $initials.addClass( "pink" );
+		    count +=1;
+		    console.log(count);
 		  }, function() {
 		    $initials.removeClass( "pink" );
 		  }
@@ -42,10 +65,16 @@ BDC.logoColorChange = {
 		$thirdArticles.hover(
 		  function() {
 		    $initials.addClass( "yellow" );
+		    count +=1;
+		    console.log(count);
 		  }, function() {
 		    $initials.removeClass( "yellow" );
 		  }
 		);
+
+
+
+
 	}
 }
 // #00C9C1
