@@ -24,13 +24,6 @@ BDC.logoColorChange = {
 		$oddArticles = jQuery('a.article:odd');
 		$thirdArticles = jQuery('a.article:nth-child(3n+3)');
 		$initials = jQuery('.initials');
-		console.log($evenArticles.length)
-		$evenArticles.hover( function (){
-			console.log('hi');
-		})
-		$oddArticles.hover( function (){
-			console.log('good');
-		})
 
 		$oddArticles.hover(
 		  function() {
@@ -42,7 +35,6 @@ BDC.logoColorChange = {
 		$evenArticles.hover(
 		  function() {
 		    $initials.addClass( "pink" );
-		    console.log('meeeme')
 		  }, function() {
 		    $initials.removeClass( "pink" );
 		  }
@@ -50,7 +42,6 @@ BDC.logoColorChange = {
 		$thirdArticles.hover(
 		  function() {
 		    $initials.addClass( "yellow" );
-		    console.log('yell')
 		  }, function() {
 		    $initials.removeClass( "yellow" );
 		  }
@@ -70,11 +61,5 @@ $(window).load(function(){
 });
 $(document).ready(function() {
 	BDC.aboutLinkAction.init();
-	// jQuery('.about-link').click(function(e){
-	// 			e.preventDefault();
-	// 			alert('hiii');
-
-	// 		})
 	BDC.logoColorChange.init();
-
 });
