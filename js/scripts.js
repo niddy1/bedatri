@@ -32,7 +32,7 @@ BDC.logoColorChange = {
 				$input.appendTo(jQuery(".secret"));
 				jQuery('.secret-tom').click(function(e){
 					e.preventDefault();
-					$('.img').css('background-image', 'url(css/images/tom.jpg)');
+					$('.img').css('background-image', 'url(css/images/tommy.jpg)');
 					$('div').css( 'cursor', 'url(css/images/tom-face.png), auto');
 					$('.initials a').text("TOM");
 					$('.full-name').text("Tommy Cinema");
