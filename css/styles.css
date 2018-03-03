@@ -79,6 +79,7 @@ img {
 	position: relative;
 	top: -10px;
 	color: #00C9C1;
+	margin-bottom: 40px;
 	/*//font-family: 'Tangerine', cursive;*/
 }
 
@@ -100,7 +101,8 @@ img {
 }
 
 .left-div .teal a{
-	color: #00C9C1;
+	/*color: #00C9C1;*/
+	color: #000;
 }
 
 .left-div .pink a{
@@ -114,6 +116,9 @@ img {
 
 .left-div .initials a{
 	text-decoration: none;
+}
+.left-div .initials a:hover{
+	color: #000;
 }
 
 @media (max-width: 768px){
@@ -299,7 +304,7 @@ a.article .article{
 }
 
 .about-me{
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 .about-link{
 	color: #00C9C1;
