@@ -36,6 +36,8 @@ BDC.logoColorChange = {
 					$('div').css( 'cursor', 'url(css/images/tom-face.png), auto');
 					$('.initials a').text("TOM");
 					$('.full-name').text("Tommy Cinema");
+					$("a").attr("href", "https://youngnhung.bandcamp.com/releases");
+					$('.initials a').attr("href", "/");
 				})
 			}
 		}
