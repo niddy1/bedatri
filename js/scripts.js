@@ -34,10 +34,16 @@ BDC.logoColorChange = {
 					e.preventDefault();
 					$('.img').css('background-image', 'url(css/images/tommy.jpg)');
 					$('div').css( 'cursor', 'url(css/images/tom-face.png), auto');
+					$('div a').css( 'cursor', 'url(css/images/tom-face.png), auto');
 					$('.initials a').text("TOM");
 					$('.full-name').text("Tommy Cinema");
 					$("a").attr("href", "https://youngnhung.bandcamp.com/releases");
 					$('.initials a').attr("href", "/");
+					$('.article-title').text('Donate to my Indiegogo');
+					$('i').removeClass();
+					$('i').addClass('fa fa-money');
+					$('.secret-audio').show();
+					$('.secret-audio').append('<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3913553568/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://youngnhung.bandcamp.com/album/over-the-hump">Over The Hump by Young N. Hung</a></iframe>');
 				})
 			}
 		}
@@ -47,7 +53,6 @@ BDC.logoColorChange = {
 		  function() {
 		    $initials.addClass( "teal" );
 		    count +=1;
-		    console.log(count);
 		    if (count > 50){
 		    	createTom();
 		    }
@@ -59,7 +64,6 @@ BDC.logoColorChange = {
 		  function() {
 		    $initials.addClass( "pink" );
 		    count +=1;
-		    console.log(count);
 		  }, function() {
 		    $initials.removeClass( "pink" );
 		  }
@@ -68,7 +72,6 @@ BDC.logoColorChange = {
 		  function() {
 		    $initials.addClass( "yellow" );
 		    count +=1;
-		    console.log(count);
 		  }, function() {
 		    $initials.removeClass( "yellow" );
 		  }
