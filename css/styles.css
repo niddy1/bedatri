@@ -17,6 +17,10 @@ ul {
 a {
 	text-decoration: none;
 	color: #000;
+	-moz-transition: all .2s ease-in;
+	    -o-transition: all .2s ease-in;
+	    -webkit-transition: all .2s ease-in;
+	    transition: all .2s ease-in;
 }
 img {
   max-width: 100%;
@@ -99,6 +103,10 @@ img {
 	font-weight: bold;
 	color: #00B2C0;
 	margin-left: -5px;
+	-moz-transition: all .2s ease-in;
+	    -o-transition: all .2s ease-in;
+	    -webkit-transition: all .2s ease-in;
+	    transition: all .2s ease-in;
 }
 
 .left-div .teal a{
@@ -275,6 +283,10 @@ a.article .article{
 	/*max-width: 300px;*/
 	height: 200px;
 	background-position: 50% 50%;
+	-moz-transition: all .2s ease-in;
+	    -o-transition: all .2s ease-in;
+	    -webkit-transition: all .2s ease-in;
+	    transition: all .2s ease-in;
 }
 .article-container .article .img-container {
 	position: relative;
@@ -302,6 +314,10 @@ a.article .article{
 	/*//background: white;*/
 	/*background-image: none !important;*/
 	opacity: .3;
+	-moz-transition: all .2s ease-in;
+	    -o-transition: all .2s ease-in;
+	    -webkit-transition: all .2s ease-in;
+	    transition: all .2s ease-in;
 /*	-webkit-transition: background .31s;
 	transition: background-color .31s-*/
 }
@@ -309,6 +325,10 @@ a.article .article{
 .article-container .article .article-title{
 	text-align: center;
 	font-weight: bold;
+	-moz-transition: all .2s ease-in;
+	    -o-transition: all .2s ease-in;
+	    -webkit-transition: all .2s ease-in;
+	    transition: all .2s ease-in;
 }
 
 .about-me{
@@ -327,6 +347,10 @@ a.article .article{
 	margin-right: 15px;
 	margin-bottom: 10px;
 	color: #00B2C0;
+	-moz-transition: all .2s ease-in;
+	    -o-transition: all .2s ease-in;
+	    -webkit-transition: all .2s ease-in;
+	    transition: all .2s ease-in;
 }
 
 .social .fa:hover{
