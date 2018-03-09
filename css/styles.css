@@ -85,6 +85,8 @@ img {
 	color: #00B2C0;
 	margin-bottom: 40px;
 	/*//font-family: 'Tangerine', cursive;*/
+	font-size: 18px;
+	font-weight: 300;
 }
 
 @media (max-width: 768px){
