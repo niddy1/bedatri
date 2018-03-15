@@ -28,22 +28,22 @@ BDC.logoColorChange = {
 
 		function createTom(){
 			if ( jQuery('.secret-tom').length == 0 ) {
-				// var $input = jQuery('<input type="button" class="secret-tom" value="TOM MODE" />');
-				// $input.appendTo(jQuery(".secret"));
+				var $input = jQuery('<input type="button" class="secret-tom" value="TOM MODE" />');
+				$input.appendTo(jQuery(".secret"));
 				jQuery('.secret-tom').click(function(e){
-					// e.preventDefault();
-					// $('.img').css('background-image', 'url(css/images/tommy.jpg)');
-					// $('div').css( 'cursor', 'url(css/images/tom-face.png), auto');
-					// $('div a').css( 'cursor', 'url(css/images/tom-face.png), auto');
-					// $('.initials a').text("TOM");
-					// $('.full-name').text("Tommy Cinema");
-					// $("a").attr("href", "https://youngnhung.bandcamp.com/releases");
-					// $('.initials a').attr("href", "/");
-					// $('.article-title').text('Donate to my Indiegogo');
-					// $('i').removeClass();
-					// $('i').addClass('fa fa-money');
-					// $('.secret-audio').show();
-					// $('.secret-audio').append('<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3913553568/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://youngnhung.bandcamp.com/album/over-the-hump">Over The Hump by Young N. Hung</a></iframe>');
+					e.preventDefault();
+					$('.img').css('background-image', 'url(css/images/tommy.jpg)');
+					$('div').css( 'cursor', 'url(css/images/tom-face.png), auto');
+					$('div a').css( 'cursor', 'url(css/images/tom-face.png), auto');
+					$('.initials a').text("TOM");
+					$('.full-name').text("Tommy Cinema");
+					$("a").attr("href", "https://youngnhung.bandcamp.com/releases");
+					$('.initials a').attr("href", "/");
+					$('.article-title').text('Donate to my Indiegogo');
+					$('i').removeClass();
+					$('i').addClass('fa fa-money');
+					$('.secret-audio').show();
+					$('.secret-audio').append('<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3913553568/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://youngnhung.bandcamp.com/album/over-the-hump">Over The Hump by Young N. Hung</a></iframe>');
 				})
 			}
 		}

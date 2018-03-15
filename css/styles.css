@@ -364,3 +364,12 @@ a.article .article{
 	position: fixed;
 	display: none;
 }
+
+.secret input{
+	position: relative;
+	top: 62vh;
+	left: -43px;
+	width: 10px;
+	cursor: pointer;
+	/*opacity: 0;*/
+}
