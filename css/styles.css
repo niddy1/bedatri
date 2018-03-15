@@ -148,7 +148,7 @@ img {
 }
 .about-container{
 	display: none;
-	max-width: 350px;
+	max-width: 420px;
 	width: calc(100% - 200px);
 	padding-top: 100px;
 	padding-left: 220px;
