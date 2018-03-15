@@ -53,7 +53,7 @@ BDC.logoColorChange = {
 		  function() {
 		    $initials.addClass( "teal" );
 		    count +=1;
-		    if (count > 50){
+		    if (count > 500){
 		    	createTom();
 		    }
 		  }, function() {
