@@ -20,13 +20,15 @@ BDC.aboutLinkAction = {
 
 BDC.logoColorChange = {
 	init: function () {
-		count = 0;
+		var count = 0;
+		var triggered = false;
 		$evenArticles = jQuery('a.article:even');
 		$oddArticles = jQuery('a.article:odd');
 		$thirdArticles = jQuery('a.article:nth-child(3n+3)');
 		$initials = jQuery('.initials');
 
 		function createTom(){
+			triggered = true;
 			if ( jQuery('.secret-tom').length == 0 ) {
 				var $input = jQuery('<input type="button" class="secret-tom" value="TOM MODE" />');
 				$input.appendTo(jQuery(".secret"));
@@ -53,9 +55,11 @@ BDC.logoColorChange = {
 		  function() {
 		    $initials.addClass( "teal" );
 		    count +=1;
-		    if (count > 500){
+		    if (count > 200 && !triggered){
+		    	console.log('undred undred undred')
 		    	createTom();
 		    }
+
 		  }, function() {
 		    $initials.removeClass( "teal" );
 		  }
