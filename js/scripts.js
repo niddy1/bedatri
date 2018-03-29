@@ -44,6 +44,7 @@ BDC.logoColorChange = {
 					$('.article-title').text('Donate to my Indiegogo');
 					$('i').removeClass();
 					$('i').addClass('fa fa-money');
+					$('.slide').css('background-image', 'url(css/images/wheelchair.png)');
 					$('.secret-audio').show();
 					$('.secret-audio').append('<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3913553568/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://youngnhung.bandcamp.com/album/over-the-hump">Over The Hump by Young N. Hung</a></iframe>');
 				})
@@ -89,9 +90,10 @@ BDC.logoColorChange = {
 // #00C9C1
 // #CB356A
 // #D09F02
-
+var rp = '';
 $(window).scroll(function() {
-
+	rp= $(window).scrollTop() - 400;
+	$('.slide').css('right', rp);
 });
 
 $(window).load(function(){

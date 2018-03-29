@@ -364,7 +364,15 @@ a.article .article{
 	position: fixed;
 	display: none;
 }
-
+.slide {
+	position: fixed;
+	height: 420px;
+	width: 200px;
+	bottom: 0vh;
+	right: -400px;
+	background-position: 50% 50%;
+	background-size: cover;
+}
 .secret input{
 	position: relative;
 	top: 62vh;
