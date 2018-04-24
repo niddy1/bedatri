@@ -3,8 +3,8 @@ body,
 h1,
 h2,
 h3,
+h2,
 h4,
-h5,
 h6,
 p,
 ul {
@@ -14,6 +14,7 @@ ul {
   -moz-osx-font-smoothing: grayscale;
  font-family: 'Roboto Condensed', sans-serif;
 }
+
 a {
 	text-decoration: none;
 	color: #000;
@@ -62,7 +63,7 @@ img {
 	width: 190px;
 	display: inline-block;
 	position: fixed;
-	top: 30px;
+	top: 15px;
 }
 
 @media (max-width: 768px){
@@ -189,6 +190,11 @@ a.article .article{
 }
 
 @media (max-width: 768px){
+
+	.article-container{
+		padding-top: 65px;
+	}
+
 	.article-container .article{
 		width: calc(50% - 12.5px);
 	}
@@ -233,6 +239,10 @@ a.article .article{
 		padding-top: 150px;
 	}
 
+	.article-container {
+		padding-top: 20px;
+	}
+
 	.article-container, .about-container{
 		width: 100%;
 		padding-left: 0px;
@@ -246,7 +256,10 @@ a.article .article{
 	.left-div{
 		position: absolute;
 		width: 280px;
-		top: 10px;
+		top: 0px;
+	}
+	.left-div .name-container{
+		margin-bottom: 0px;
 	}
 
 	.left-div .initials{
@@ -255,7 +268,7 @@ a.article .article{
 	.left-div .full-name{
 		font-size: 18px;
 		top: -10px;
-		margin-bottom: 25px;
+		margin-bottom: 0px;
 	}
 
 	.left-div .about-link{
@@ -263,7 +276,7 @@ a.article .article{
 	}
 
 	.left-div .about-me{
-		margin-bottom: 15px;
+		margin-bottom: 5px;
 	}
 
 	.full-name span{
@@ -325,6 +338,7 @@ a.article .article{
 }
 
 .article-container .article .article-title{
+	font-size: 16px;
 	text-align: center;
 	font-weight: bold;
 	-moz-transition: all .2s ease-in;
@@ -358,7 +372,7 @@ a.article .article{
 .social .fa:hover{
 	color: #000;
 }
-.secret-audio{
+.sample-audio{
 	width: 50%;
 	right: 60px;
 	position: fixed;
@@ -373,7 +387,7 @@ a.article .article{
 	background-position: 50% 50%;
 	background-size: cover;
 }
-.secret input{
+.sample input{
 	position: relative;
 	top: 62vh;
 	left: -43px;

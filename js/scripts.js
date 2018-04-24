@@ -31,7 +31,7 @@ BDC.logoColorChange = {
 			triggered = true;
 			if ( jQuery('.secret-tom').length == 0 ) {
 				var $input = jQuery('<input type="button" class="secret-tom" value="TOM MODE" />');
-				$input.appendTo(jQuery(".secret"));
+				$input.appendTo(jQuery(".sample"));
 				jQuery('.secret-tom').click(function(e){
 					e.preventDefault();
 					$('.img').css('background-image', 'url(css/images/tommy.jpg)');
@@ -45,8 +45,8 @@ BDC.logoColorChange = {
 					$('i').removeClass();
 					$('i').addClass('fa fa-money');
 					$('.slide').css('background-image', 'url(css/images/wheelchair.png)');
-					$('.secret-audio').show();
-					$('.secret-audio').append('<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3913553568/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://youngnhung.bandcamp.com/album/over-the-hump">Over The Hump by Young N. Hung</a></iframe>');
+					$('.sample-audio').show();
+					$('.sample-audio').append('<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3913553568/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://youngnhung.bandcamp.com/album/over-the-hump">Over The Hump by Young N. Hung</a></iframe>');
 				})
 			}
 		}
