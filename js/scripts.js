@@ -34,9 +34,9 @@ BDC.logoColorChange = {
 				$input.appendTo(jQuery(".sample"));
 				jQuery('.secret-tom').click(function(e){
 					e.preventDefault();
-					$('.img').css('background-image', 'url(css/images/tommy.jpg)');
-					$('div').css( 'cursor', 'url(css/images/tom-face.png), auto');
-					$('div a').css( 'cursor', 'url(css/images/tom-face.png), auto');
+					$('.img').css('background-image', 'url(js/images/tommy.jpg)');
+					$('div').css( 'cursor', 'url(js/images/tom-face.png), auto');
+					$('div a').css( 'cursor', 'url(js/images/tom-face.png), auto');
 					$('.initials a').text("TOM");
 					$('.full-name').text("Tommy Cinema");
 					$("a").attr("href", "https://youngnhung.bandcamp.com/releases");
@@ -44,7 +44,7 @@ BDC.logoColorChange = {
 					$('.article-title').text('Donate to my Indiegogo');
 					$('i').removeClass();
 					$('i').addClass('fa fa-money');
-					$('.slide').css('background-image', 'url(css/images/wheelchair.png)');
+					$('.slide').css('background-image', 'url(js/images/wheelchair.png)');
 					$('.sample-audio').show();
 					$('.sample-audio').append('<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3913553568/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://youngnhung.bandcamp.com/album/over-the-hump">Over The Hump by Young N. Hung</a></iframe>');
 				})
