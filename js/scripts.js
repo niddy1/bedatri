@@ -18,6 +18,13 @@ BDC.aboutLinkAction = {
 	}
 }
 
+// BDC.catLinks = {
+// 	init: function() {
+// 		$( ".preview-text:contains('Frame')" ).css( "text-decoration", "underline" );
+
+// 	}
+// }
+
 BDC.logoColorChange = {
 	init: function () {
 		var count = 0;
@@ -102,4 +109,5 @@ $(window).load(function(){
 $(document).ready(function() {
 	BDC.aboutLinkAction.init();
 	BDC.logoColorChange.init();
+	BDC.catLinks.init();
 });
