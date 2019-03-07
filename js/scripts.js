@@ -18,6 +18,25 @@ BDC.aboutLinkAction = {
 	}
 }
 
+BDC.bandcamp = {
+	
+	init: function(){
+		$bandcamp = jQuery('.sample-audio');
+
+		var self = this;
+		
+		focus();
+		var listener = window.addEventListener('blur', function() {
+		    if (document.activeElement === document.getElementById('bc')) {
+		        // clicked
+		        $('.img').css('background-image', 'url(js/images/tommy-dance.gif)');
+		        $('.img').css('height', '450px');
+		    }
+		    window.removeEventListener('blur', listener);
+		});
+	}
+}
+
 // BDC.catLinks = {
 // 	init: function() {
 // 		$( ".preview-text:contains('Frame')" ).css( "text-decoration", "underline" );
@@ -42,8 +61,8 @@ BDC.logoColorChange = {
 				jQuery('.secret-tom').click(function(e){
 					e.preventDefault();
 					$('.img').css('background-image', 'url(js/images/tommy.jpg)');
-					$('div').css( 'cursor', 'url(js/images/tom-face.png), auto');
-					$('div a').css( 'cursor', 'url(js/images/tom-face.png), auto');
+					$('div').css( 'cursor', 'url(js/images/tom-face.png), pointer');
+					$('div a').css( 'cursor', 'url(js/images/tom-face.png), pointer');
 					$('.initials a').text("TOM");
 					$('.full-name').text("Tommy Cinema");
 					$("a").attr("href", "https://youngnhung.bandcamp.com/releases");
@@ -53,7 +72,7 @@ BDC.logoColorChange = {
 					$('i').addClass('fa fa-money');
 					$('.slide').css('background-image', 'url(js/images/wheelchair.png)');
 					$('.sample-audio').show();
-					$('.sample-audio').append('<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3913553568/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://youngnhung.bandcamp.com/album/over-the-hump">Over The Hump by Young N. Hung</a></iframe>');
+					$('.sample-audio').append('<iframe id="bc" class="bandcamp" style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3913553568/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://youngnhung.bandcamp.com/album/over-the-hump">Over The Hump by Young N. Hung</a></iframe>');
 				})
 			}
 		}
@@ -63,7 +82,7 @@ BDC.logoColorChange = {
 		  function() {
 		    $initials.addClass( "teal" );
 		    count +=1;
-		    if (count > 200 && !triggered){
+		    if (count > 100 && !triggered){
 		    	console.log('undred undred undred')
 		    	createTom();
 		    }
@@ -109,5 +128,6 @@ $(window).load(function(){
 $(document).ready(function() {
 	BDC.aboutLinkAction.init();
 	BDC.logoColorChange.init();
-	BDC.catLinks.init();
+	//BDC.catLinks.init();
+	BDC.bandcamp.init();
 });
