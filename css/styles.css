@@ -389,11 +389,12 @@ a.article .article{
 }
 .sample input{
 	position: relative;
-	left: -43px;
-	width: 10px;
+	left: 0px;
+	width: 30px;
 	cursor: pointer;
 	font-size: 2px;
 	padding: 0px;
 	opacity: 0;
+	top: 100px;
 	
 }
