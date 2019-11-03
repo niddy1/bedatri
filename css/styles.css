@@ -23,6 +23,7 @@ a {
 	    -webkit-transition: all .2s ease-in;
 	    transition: all .2s ease-in;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -387,6 +388,111 @@ a.article .article{
 	background-position: 50% 50%;
 	background-size: cover;
 }
+.b-container{
+	background: white;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	text-align: center;
+	display: none;
+}
+.pray{
+	width: 100px;
+	height: 50px;
+	background: #d1b069;
+	border-radius: 15px;
+	font-size: 18px;
+	z-index: 15;
+}
+.pray-back{
+	display: block;
+	margin-left: 20px;
+}
+.b{
+	background-image : url(../js/images/buddha.png);
+	background-position: 50% 50%;
+	background-size: contain;
+	height: 580px;
+	max-height: 580px;
+	width: 50%;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+}
+.bill{
+	position: fixed;
+	width: 60px;
+	height: 30px;
+	bottom: 0vh;
+	top: -400px;
+	background-position: 50% 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 10;
+
+}
+
+.bill1{
+	left: 10%;
+}
+.bill2{
+	left: 26%;
+}
+.bill3{
+	left: 30%;
+	top:-200px;
+}
+.bill4{
+	left: 41%;
+}
+.bill5{
+	left: 53%;
+	top:-200px;
+}
+.bill6{
+	left: 65%;
+}
+.bill7{
+	left: 80%;
+	top:-200px;
+}
+.bill8{
+	left: 6%;
+}
+.bill9{
+	left: 30%;
+}
+.bill10{
+	left: 22%;
+}
+.bill11{
+	left: 70%;
+}
+.bill12{
+	left: 46%;
+}
+.bill13{
+	left: 56%;
+}
+.bill14{
+	left: 66%;
+}
+.bill15{
+	left: 72%;
+}
+.bill16{
+	left: 82%;
+}
+.bill17{
+	left: 92%;
+}
+.bill18{
+	left: 32%;
+}
+.bill19{
+	left: 52%;
+}
+
 .sample input{
 	position: relative;
 	left: 0px;
@@ -397,4 +503,12 @@ a.article .article{
 	opacity: 0;
 	top: 100px;
 	
+}
+.buddah-btn{
+	display: none;
+	opacity: 1 !important;
+    width: 100px !important;
+    background: gold !important;
+    height: 40px !important;
+    font-size: 20px !important;
 }
