@@ -149,7 +149,7 @@ BDC.logoColorChange = {
 					$('.slide').css('background-image', 'url(js/images/wheelchair.png)');
 					
 					$('.sample-audio').show();
-					$('.sample-audio').append('<iframe id="bc" class="bandcamp" style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3913553568/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://youngnhung.bandcamp.com/album/over-the-hump">Over The Hump by Young N. Hung</a></iframe>');
+					$('.sample-audio').append('<iframe id="bc" class="bandcamp" style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3913553568/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://youngnhung.bandcamp.com/album/over-the-hump">Over The Hump by Young N. Hung</a></iframe>');
 				})
 			}
 		}
